@@ -1,0 +1,13 @@
+goog.addDependency("base.js", ['goog'], []);
+goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.object', 'goog.string.StringBuffer', 'goog.array']);
+goog.addDependency("../om/dom.js", ['om.dom'], ['cljs.core', 'goog.object']);
+goog.addDependency("../clojure/string.js", ['clojure.string'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);
+goog.addDependency("../om_tools/dom.js", ['om_tools.dom'], ['cljs.core', 'om.dom', 'clojure.string']);
+goog.addDependency("../om_material_ui/core.js", ['om_material_ui.core'], ['om_tools.dom', 'cljs.core', 'clojure.string']);
+goog.addDependency("../schema/utils.js", ['schema.utils'], ['goog.string', 'cljs.core', 'goog.string.format']);
+goog.addDependency("../schema/core.js", ['schema.core'], ['cljs.core', 'clojure.string', 'schema.utils']);
+goog.addDependency("../plumbing/fnk/schema.js", ['plumbing.fnk.schema'], ['schema.core', 'cljs.core', 'schema.utils']);
+goog.addDependency("../plumbing/core.js", ['plumbing.core'], ['cljs.core', 'plumbing.fnk.schema', 'schema.utils']);
+goog.addDependency("../om/core.js", ['om.core'], ['goog.dom', 'cljs.core', 'om.dom', 'goog.ui.IdGenerator']);
+goog.addDependency("../om_tools/core.js", ['om_tools.core'], ['plumbing.core', 'cljs.core', 'om.core', 'plumbing.fnk.schema']);
+goog.addDependency("../simple/core.js", ['simple.core'], ['om_material_ui.core', 'om_tools.core', 'cljs.core', 'om.dom', 'om.core']);
