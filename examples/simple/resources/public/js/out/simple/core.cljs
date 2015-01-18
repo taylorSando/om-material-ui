@@ -5,11 +5,8 @@
             [om-material-ui.core :as mui :include-macros true]))
 
 (defcomponentk main [data]
-  (render [_]
-    
-    (dom/div nil (mui/input {}))    
-    
-    ))
+  (render [_]    
+    (dom/div nil (mui/input {:placeholder "Placeholder" :description "I am a description"}))))
 
 (defn init 
   "I don't do a whole lot."

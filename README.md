@@ -1,10 +1,10 @@
 # om-material-ui
 
-A Clojure library designed to ... well, that part is up to you.
+A simple wrapper around React MaterialUI.  It is basically like bootstrap-cljs.
 
 ## Usage
 
-FIXME
+
 
 ## License
 
