@@ -6,9 +6,12 @@ A simple wrapper around React MaterialUI.  It is basically like bootstrap-cljs.
 
 [![Clojars Project](http://clojars.org/om-material-ui/latest-version.svg)](http://clojars.org/om-material-ui)
 
-You can view a very basic sample by:
-cd examples
+The sample is located at:
+
+cd examples/simple
+
 lein cljsbuild once simple
+
 Then going to resources/public/index.html in a browser
 
 You should see a very basic input box, material ui-style.
