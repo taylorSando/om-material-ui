@@ -2,6 +2,7 @@
 
 To build or change the materuial-ui version:
 * Update package.json
+* ```npm install```
 * ```npm start```
 
 
