@@ -21,6 +21,7 @@
   FlatButton
   FloatingActionButton
   FocusRipple  
+  FontIcon
   IconButton
   Icon
   InkBar
@@ -31,16 +32,19 @@
   Overlay
   Paper
   RadioButton
+  RadioButtonGroup
   RaisedButton
   Slider
   SlideIn
   Snackbar
+  SvgIcon
   Tab
   TabTemplate
   Tabs
   TableHeader
   TableRowsItem
   TableRows
+  TextField
   Toggle
   ToolbarGroup
   Toolbar
