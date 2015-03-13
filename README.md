@@ -37,6 +37,21 @@ Then, given this text field component:
 You can get its value using `(.getValue (get-ref owner "text"))`
 
 
+### Avoid loading React twice
+
+By default, when adding om as a :dependency in the project, it will include react.
+material.js does that too, so you page will load react twice and probably will see a message like this in the console:
+
+```Uncaught TypeError: Cannot read property 'firstChild' of undefined```
+
+A way to avoid this problem is to make om not include react, and just use the one in material.js.
+In the project.clj file, include Om as follow:
+```[org.omcljs/om "0.8.8" :exclusions [cljsjs/react]]```
+
+then create a react.cljs file:
+```mkdir src/cljsjs; echo "(ns cljsjs.react)" > src/cljsjs/react.cljs```
+
+
 ## License
 
 Copyright © 2015 FIXME
